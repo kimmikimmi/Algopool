@@ -39,8 +39,7 @@ void input() {
 
 	for(int k=0; k<num; k++) {
 
-		cin >> i >> j >> size;
-		
+		cin >> i >> j >> size;		
 		adjMat[i][j] = size;
 		
 	}
