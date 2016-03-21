@@ -1,0 +1,3 @@
+g++ -o binarytree binarytree.cpp -std=c++11
+chmod +x binarytree
+./binarytree < binarytree.in 

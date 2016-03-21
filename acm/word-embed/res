@@ -1,0 +1,3 @@
+g++ -o word-embed word-embed.cpp -std=c++11
+chmod +x word-embed
+./word-embed < word-embed.in

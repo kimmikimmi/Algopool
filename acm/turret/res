@@ -1,0 +1,3 @@
+g++ -o turret turret.cpp -std=c++11
+chmod +x turret
+./turret < turret.in
