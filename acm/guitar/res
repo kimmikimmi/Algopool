@@ -1,0 +1,3 @@
+g++ -o guitar guitar.cpp -std=c++11
+chmod +x guitar
+./guitar < guitar.in

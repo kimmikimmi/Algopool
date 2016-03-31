@@ -1,0 +1,3 @@
+g++ -o tile tile.cpp -std=c++11
+chmod +x tile
+./tile < tile.in

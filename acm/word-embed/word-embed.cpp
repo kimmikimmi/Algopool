@@ -12,6 +12,9 @@ vector<char> comp_buf; // 각 열 비교시에 2개이상의 알파벳이 있는
 vector<char> surr_buf;
 int n; // num of strings
 
+void displayMap() {
+	for()
+}
 void method() {
 	for(int i=0; i<8; i++) {
 		for(int j=0; j<n; j++) {

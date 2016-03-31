@@ -1,0 +1,3 @@
+g++ -o string-exp string-exp.cpp -std=c++11
+chmod +x string-exp
+./string-exp < string-exp.in

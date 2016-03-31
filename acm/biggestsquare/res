@@ -1,0 +1,3 @@
+g++ -o biggestsquare biggestsquare.cpp -std=c++11
+chmod +x biggestsquare
+./biggestsquare < biggestsquare.in
