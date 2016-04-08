@@ -3,8 +3,16 @@
 #include <vector>
 using namespace std;
 
+template<typename T>
+inline void swap(T &x, T &y)
+{
+    T tmp = x;
+    x = y; y = tmp;
+}
 
-//int *cache;
+#define SWAP(x, y) do { typeof(x) SWAP = x; x = y; y = SWAP; } while (0)
+
+
 std::vector<int> a;
 
 void input() {
@@ -48,6 +56,7 @@ void permute( int depth, int n, int k) {
 		}
 
 	}
+
 }
 
 
@@ -55,12 +64,11 @@ int main(int argc, char const *argv[])
 {
 	/* code */
 		
-		int n;
+	int n;
 	cin >> n;
 	
-	for(int i=0; i<n; i++)
-		a.push_back(i+1);
-		permute(0,a.size(),a.size());
+	for(int i=0; i<n; i++) a.push_back(i+1);
+			permute(0,a.size(),a.size());
 	
 	
 

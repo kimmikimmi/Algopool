@@ -1,0 +1,3 @@
+g++ -o sequencial-sum sequencial-sum.cpp -std=c++11
+chmod +x sequencial-sum
+./sequencial-sum < sequencial-sum.in

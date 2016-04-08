@@ -7,16 +7,13 @@ using namespace std;
 #define MAX_COL 1001
 /*
 n×m의 0, 1로 된 배열이 있다. 이 배열에서 1로 된 가장 큰 정사각형의 크기를 구하는 프로그램을 작성하시오.
-
 0	1	0	0
 0	1	1	1
 1	1	1	0
 0	0	1	0
 위와 같은 예제에서는 가운데의 2×2 배열이 가장 큰 정사각형이다. 
-
 입력
 첫째 줄에 n, m(1 ≤ n, m ≤ 1,000)이 주어진다. 다음 n개의 줄에는 m개의 숫자로 배열이 주어진다.
-
 출력
 첫째 줄에 가장 큰 정사각형의 넓이를 출력한다.
 */
@@ -55,45 +52,45 @@ void initMat() {
 			 line increases in every single loop.. and erase an element in case when it is impossible to make the square 
 			 	of which size is line by line.
 */
-int method() {
-	if(squares.empty()) return 0;
+// int method() {
+// 	if(squares.empty()) return 0;
 	
-	int line = 2;
-	int index = 0;
-	bool isSquare = true;
+// 	int line = 2;
+// 	int index = 0;
+// 	bool isSquare = true;
 
-	while(!squares.empty()) {
-		int r = squares[index].x;
-		int c = squares[index].y;
+// 	while(!squares.empty()) {
+// 		int r = squares[index].x;
+// 		int c = squares[index].y;
 
-		if( (r + line-1 != -1) && (c + line-1 != -1) ) {
+// 		if( (r + line-1 != -1) && (c + line-1 != -1) ) {
 			
-			for(int i=0; i<line; i++) {
-				if((mat[r + line-1][c + i] != 1) || (mat[r + i][c + line-1] != 1)) {
-						squares.erase(squares.begin() + index);
-						isSquare = false;
-						break;
-				}				
-			}
+// 			for(int i=0; i<line; i++) {
+// 				if((mat[r + line-1][c + i] != 1) || (mat[r + i][c + line-1] != 1)) {
+// 						squares.erase(squares.begin() + index);
+// 						isSquare = false;
+// 						break;
+// 				}				
+// 			}
 
-			if(isSquare) {
-				index++;
-			} else {
-				isSquare = true;
-			} 	
+// 			if(isSquare) {
+// 				index++;
+// 			} else {
+// 				isSquare = true;
+// 			} 	
 			
-		} else {
-			squares.erase(squares.begin() + index);
-		}
+// 		} else {
+// 			squares.erase(squares.begin() + index);
+// 		}
 
-		if(!squares.empty() && index == squares.size()) {
-			index = 0;
-			line++;
-		}
-	}
+// 		if(!squares.empty() && index == squares.size()) {
+// 			index = 0;
+// 			line++;
+// 		}
+// 	}
 
-	return line-1;
-}
+// 	return line-1;
+// }
 
 /*
 	trial 2 Recursion.
@@ -101,7 +98,6 @@ int method() {
 					with Dynamic programming.
 	@param : int int
 	@return int
-
 */
 int recursive_sol(int i, int j) {
 	
@@ -134,7 +130,6 @@ int recursive_sol(int i, int j) {
 	@param : null
 	@return : int (square root of the final answer)
 	@description : find the max side of the square using secursive_sol(int int)
-
 */
 int get_solution() {
 	int max = 0;
@@ -150,12 +145,12 @@ int get_solution() {
 /*
 	@param : istream
 	@return : void
-
 	@description :
 			using istream object, read n, m, and insert to mat as integer.
 */
 void input(istream& in) {
-	in >> n >> m;
+	
+
 	char temp;
 
 	for(int i=0; i<n; i++) 
@@ -169,6 +164,11 @@ void input(istream& in) {
 }
 
 int main() {
+	n = 1;
+	while(n != 0){
+		
+		cin >> n >> m;
+		if(n == 0) break;
 	initMat();
 
 	input(cin);
@@ -176,6 +176,9 @@ int main() {
 	// int ans = pow(method(), 2) ;
 	// cout << ans << endl;
 
-	cout << pow(get_solution(),2);
+	cout << get_solution() << endl;
+}
+
+
 	return 0;
 }

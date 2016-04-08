@@ -1,0 +1,3 @@
+g++ -o diferencija diferencija.cpp -std=c++11
+chmod +x diferencija
+./diferencija < diferencija.in
