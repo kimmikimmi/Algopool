@@ -1,0 +1,3 @@
+g++ -o tiling2 tiling2.cpp -std=c++11
+chmod +x tiling2
+./tiling2 < tiling2.in

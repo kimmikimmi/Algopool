@@ -1,0 +1,3 @@
+g++ -o move move.cpp -std=c++11
+chmod +x move
+./move < move.in

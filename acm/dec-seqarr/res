@@ -1,0 +1,3 @@
+g++ -o dec-seqarr dec-seqarr.cpp -std=c++11
+chmod +x dec-seqarr
+./dec-seqarr < dec-seqarr.in

@@ -1,0 +1,3 @@
+g++ -o lis lis.cpp -std=c++11
+chmod +x lis
+./lis < lis.in
