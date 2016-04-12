@@ -1,57 +1,54 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <list>
-
 using namespace std;
 
-int n;
-std::vector<int> children;
+
+std::vector<int> seq; // integer array for holding input array.
+std::vector<std::vector<int> > table;
+
 void input(istream& in) {
+	int n;
 	int temp;
 	in >> n;
+	
 	for(int i=0; i<n; i++) {
 		in >> temp;
-		children.push_back(temp);
+		seq.push_back(temp);
 	}
-	// for(auto v : children) cout << v << endl;
+}
+
+void init_table() {
+	int l = seq.size();
+	table.resize(l);
+	
 }
 
 int method() {
-	int cnt = 0;
-	for(int i=1; i<n; i++) {
-		if(children[i-1] > children[i]) {
-			cout << "find insertion pos at i>" << i << endl;
-			for(int j=0; j<i; j++) {
-				// auto inert_pos = find_if(children.begin(), children.begin() + i,
-				// 	[&](int n) {
-				// 		if(n < children[i]) {
-				// 			return true;
-				// 		} else return false;
-				// 	});
-
-				if(children[i] < children[j]) {
-					auto pos = children.begin() + j;
-					children.insert(pos, children[i]);
-					children.erase(children.begin() + i + 1);
-					cnt++;
-					cout << "insert" << endl;
-					cout << i << ", " << j << endl;
-					for(const auto &p : children) {
-
-						cout << p << " ";
-					}
-					cout << endl;
-					break;
-				}
+	init_table();
+	int max = 0;
+	int l = seq.size();
+	std::vector<int> sol_vec(l);
+	for(int i=0; i<l; i++) {
+		
+		for(int j=0; j<i; j++) {
+			if( (seq[j] < seq[i]) && ( table[i].size() < table[j].size()+1)) {
+				 table[i] = table[j];
+			
 			}
 		}
+		 table[i].push_back(seq[i]);
+		sol_vec[i] = table[i].size();
 	}
-	return cnt;
+	auto biggest = std::max_element(std::begin(sol_vec), std::end(sol_vec));
+	cout << l- *biggest << endl;
+	return 0;
 }
 
 int main() {
 	input(cin);
-	cout << method();
+	method();
+	
+	// for(int i=0; i<seq.size(); i++) cout << table[i].size() << endl;
 	return 0;
 }

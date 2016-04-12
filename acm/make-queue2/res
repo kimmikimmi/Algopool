@@ -1,0 +1,3 @@
+g++ -o make-queue2 make-queue2.cpp -std=c++11
+chmod +x make-queue2
+./make-queue2 < make-queue2.in

@@ -1,0 +1,3 @@
+g++ -o lcs lcs.cpp -std=c++11
+chmod +x lcs
+./lcs < lcs.in

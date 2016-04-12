@@ -1,0 +1,3 @@
+g++ -o lcs2 lcs2.cpp -std=c++11
+chmod +x lcs2
+./lcs2 < lcs2.in

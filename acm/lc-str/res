@@ -1,0 +1,3 @@
+g++ -o lc-str lc-str.cpp -std=c++11
+chmod +x lc-str
+./lc-str < lc-str.in
