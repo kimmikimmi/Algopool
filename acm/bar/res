@@ -1,0 +1,3 @@
+g++ -o bar bar.cpp -std=c++11
+chmod +x bar
+./bar < bar.in

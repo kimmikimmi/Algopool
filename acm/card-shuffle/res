@@ -1,0 +1,3 @@
+g++ -o card-shuffle card-shuffle.cpp -std=c++14
+chmod +x card-shuffle
+./card-shuffle < card-shuffle.in

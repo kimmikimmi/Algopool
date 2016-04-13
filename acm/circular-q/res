@@ -1,0 +1,3 @@
+g++ -o circular-q circular-q.cpp -std=c++11
+chmod +x circular-q
+./circular-q < circular-q.in

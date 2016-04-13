@@ -1,0 +1,3 @@
+g++ -o cap-hip cap-hip.cpp -std=c++11
+chmod +x cap-hip
+./cap-hip < cap-hip.in

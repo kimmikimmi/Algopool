@@ -1,0 +1,3 @@
+g++ -o treasure treasure.cpp -std=c++11
+chmod +x treasure
+./treasure < treasure.in

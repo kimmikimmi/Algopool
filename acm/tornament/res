@@ -1,0 +1,3 @@
+g++ -o tornament tornament.cpp -std=c++11
+chmod +x tornament
+./tornament < tornament.in
