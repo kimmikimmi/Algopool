@@ -1,0 +1,3 @@
+g++ -o fibo-func fibo-func.cpp -std=c++11
+chmod +x fibo-func
+./fibo-func < fibo-func.in

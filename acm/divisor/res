@@ -1,0 +1,3 @@
+g++ -o divisor divisor.cpp -std=c++11
+chmod +x divisor
+./divisor < divisor.in

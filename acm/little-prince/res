@@ -1,0 +1,3 @@
+g++ -o little-prince little-prince.cpp -std=c++11
+chmod +x little-prince
+./little-prince < little-prince.in

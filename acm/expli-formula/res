@@ -1,0 +1,3 @@
+g++ -o expli-formula expli-formula.cpp -std=c++11
+chmod +x expli-formula
+./expli-formula < expli-formula.in

@@ -1,0 +1,3 @@
+g++ -o non-square non-square.cpp -std=c++11
+chmod +x non-square
+./non-square < non-square.in

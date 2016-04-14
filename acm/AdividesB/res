@@ -1,0 +1,3 @@
+g++ -o AdividesB AdividesB.cpp -std=c++11
+chmod +x AdividesB
+./AdividesB < AdividesB.in
