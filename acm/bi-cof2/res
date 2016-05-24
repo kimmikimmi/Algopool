@@ -1,0 +1,3 @@
+g++ -o bi-cof2 bi-cof2.cpp -std=c++11
+chmod +x bi-cof2
+./bi-cof2 < bi-cof2.in

@@ -14,6 +14,7 @@ void input(istream& in) {
 		divisors.push_back(temp);
 	}
 }
+
 void method() {
 	
 	sort(divisors.begin(), divisors.end());

@@ -1,0 +1,3 @@
+g++ -o 1904-01tile 1904-01tile.cpp -std=c++11
+chmod +x 1904-01tile
+./1904-01tile < 1904-01tile.in

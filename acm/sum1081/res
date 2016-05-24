@@ -1,0 +1,3 @@
+g++ -o sum1081 sum1081.cpp -std=c++11
+chmod +x sum1081
+./sum1081 < sum1081.in

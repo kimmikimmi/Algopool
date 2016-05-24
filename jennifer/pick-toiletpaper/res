@@ -1,0 +1,3 @@
+g++ -o pick-toiletpaper pick-toiletpaper.cpp -std=c++11
+chmod +x pick-toiletpaper
+./pick-toiletpaper < pick-toiletpaper.in

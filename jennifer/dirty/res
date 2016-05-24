@@ -1,0 +1,3 @@
+g++ -o dirty dirty.cpp -std=c++11
+chmod +x dirty
+./dirty < dirty.in

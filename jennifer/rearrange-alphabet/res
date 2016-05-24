@@ -1,0 +1,3 @@
+g++ -o rearrange-alphabet rearrange-alphabet.cpp -std=c++11
+chmod +x rearrange-alphabet
+./rearrange-alphabet < rearrange-alphabet.in

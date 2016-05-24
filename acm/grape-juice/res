@@ -1,0 +1,3 @@
+g++ -o grape-juice grape-juice.cpp -std=c++11
+chmod +x grape-juice
+./grape-juice < grape-juice.in

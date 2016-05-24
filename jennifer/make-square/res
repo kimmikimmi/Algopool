@@ -1,0 +1,3 @@
+g++ -o make-square make-square.cpp -std=c++11
+chmod +x make-square
+./make-square < make-square.in

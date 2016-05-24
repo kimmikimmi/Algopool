@@ -1,0 +1,3 @@
+g++ -o lev lev.cpp -std=c++11
+chmod +x lev
+./lev < lev.in

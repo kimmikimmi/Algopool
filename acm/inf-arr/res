@@ -1,0 +1,3 @@
+g++ -o inf-arr inf-arr.cpp -std=c++11
+chmod +x inf-arr
+./inf-arr < inf-arr.in

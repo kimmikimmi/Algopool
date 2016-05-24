@@ -1,0 +1,3 @@
+g++ -o blow-toilet blow-toilet.cpp -std=c++11
+chmod +x blow-toilet
+./blow-toilet < blow-toilet.in

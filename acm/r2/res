@@ -1,0 +1,3 @@
+g++ -o r2 r2.cpp -std=c++11
+chmod +x r2
+./r2 < r2.in

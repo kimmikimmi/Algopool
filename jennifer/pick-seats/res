@@ -1,0 +1,3 @@
+g++ -o pick-seats pick-seats.cpp -std=c++11
+chmod +x pick-seats
+./pick-seats < pick-seats.in

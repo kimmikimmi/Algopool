@@ -1,0 +1,3 @@
+g++ -o sum-div sum-div.cpp -std=c++11
+chmod +x sum-div
+./sum-div < sum-div.in

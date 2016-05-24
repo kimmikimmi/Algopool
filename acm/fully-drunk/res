@@ -1,0 +1,3 @@
+g++ -o fully-drunk fully-drunk.cpp -std=c++11
+chmod +x fully-drunk
+./fully-drunk < fully-drunk.in

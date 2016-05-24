@@ -1,0 +1,3 @@
+g++ -o 2167_better_sol 2167_better_sol.cpp -std=c++11
+chmod +x 2167_better_sol
+./2167_better_sol < 2167_better_sol.in

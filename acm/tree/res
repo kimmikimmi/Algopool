@@ -1,0 +1,3 @@
+g++ -o tree tree.cpp -std=c++11
+chmod +x tree
+./tree < tree.in

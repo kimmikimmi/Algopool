@@ -1,0 +1,3 @@
+g++ -o captain-lee captain-lee.cpp -std=c++11
+chmod +x captain-lee
+./captain-lee < captain-lee.in

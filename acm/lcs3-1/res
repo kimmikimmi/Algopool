@@ -1,0 +1,3 @@
+g++ -o lcs3-1 lcs3-1.cpp -std=c++11
+chmod +x lcs3-1
+./lcs3-1 < lcs3-1.in

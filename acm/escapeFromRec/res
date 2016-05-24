@@ -1,0 +1,3 @@
+g++ -o escapeFromRec escapeFromRec.cpp -std=c++11
+chmod +x escapeFromRec
+./escapeFromRec < escapeFromRec.in

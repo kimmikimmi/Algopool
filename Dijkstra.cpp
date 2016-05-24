@@ -101,11 +101,12 @@ void Dijkstra(int v) {
 int main(void)
 {
 	/* code */
+	cout << "it goes" << endl;
 	input();
 	displayMat();
 	 Dijkstra(0);
-	// for(int i=0; i<numOfVertices; i++) {
-		//cout << "최단거리 " << dist[2]<< endl;
-	// }
+	for(int i=0; i<numOfVertices; i++) {
+		cout << "최단거리 " << dist[2]<< endl;
+	}
 	return 0;
 }
