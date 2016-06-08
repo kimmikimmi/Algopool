@@ -1,0 +1,3 @@
+g++ -o 2914-copyright 2914-copyright.cpp -std=c++11
+chmod +x 2914-copyright
+./2914-copyright < 2914-copyright.in

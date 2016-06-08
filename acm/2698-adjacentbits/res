@@ -1,0 +1,3 @@
+g++ -o 2698-adjacentbits 2698-adjacentbits.cpp -std=c++11
+chmod +x 2698-adjacentbits
+./2698-adjacentbits < 2698-adjacentbits.in

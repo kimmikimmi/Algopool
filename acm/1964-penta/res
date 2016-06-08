@@ -1,0 +1,3 @@
+g++ -o 1964-penta 1964-penta.cpp -std=c++11
+chmod +x 1964-penta
+./1964-penta < 1964-penta.in

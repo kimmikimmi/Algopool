@@ -1,0 +1,3 @@
+g++ -o 9196-int_square 9196-int_square.cpp -std=c++11
+chmod +x 9196-int_square
+./9196-int_square < 9196-int_square.in

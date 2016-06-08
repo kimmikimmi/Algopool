@@ -1,0 +1,3 @@
+g++ -o 1292-easy 1292-easy.cpp -std=c++11
+chmod +x 1292-easy
+./1292-easy < 1292-easy.in

@@ -12,7 +12,13 @@ vector<pair<char, int>> v;
 // 값을 읽어와 str에 저장합니다.
 void input(istream& in) {
 	in >> str;
+	
 }
+
+
+
+
+
 
 
 // str을 순회하며 p 마다 카운트를 증가시켜 각각에 몇개씩 들어있는지 저장합니다.

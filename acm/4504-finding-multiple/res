@@ -1,0 +1,3 @@
+g++ -o 4504-finding-multiple 4504-finding-multiple.cpp -std=c++11
+chmod +x 4504-finding-multiple
+./4504-finding-multiple < 4504-finding-multiple.in

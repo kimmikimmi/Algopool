@@ -1,0 +1,3 @@
+g++ -o 10331-miscal 10331-miscal.cpp -std=c++11
+chmod +x 10331-miscal
+./10331-miscal < 10331-miscal.in

@@ -1,0 +1,3 @@
+g++ -o 11004-kth 11004-kth.cpp -std=c++11
+chmod +x 11004-kth
+./11004-kth < 11004-kth.in

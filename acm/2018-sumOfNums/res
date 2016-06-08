@@ -1,0 +1,3 @@
+g++ -o 2018-sumOfNums 2018-sumOfNums.cpp -std=c++11
+chmod +x 2018-sumOfNums
+./2018-sumOfNums < 2018-sumOfNums.in

@@ -1,0 +1,3 @@
+g++ -o 1357-reverse_addition 1357-reverse_addition.cpp -std=c++11
+chmod +x 1357-reverse_addition
+./1357-reverse_addition < 1357-reverse_addition.in

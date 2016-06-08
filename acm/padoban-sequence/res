@@ -1,0 +1,3 @@
+g++ -o padoban-sequence padoban-sequence.cpp -std=c++11
+chmod +x padoban-sequence
+./padoban-sequence < padoban-sequence.in

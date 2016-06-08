@@ -1,0 +1,3 @@
+g++ -o 2864-diff56 2864-diff56.cpp -std=c++11
+chmod +x 2864-diff56
+./2864-diff56 < 2864-diff56.in

@@ -1,0 +1,3 @@
+g++ -o 1977-perfect-square 1977-perfect-square.cpp -std=c++11
+chmod +x 1977-perfect-square
+./1977-perfect-square < 1977-perfect-square.in

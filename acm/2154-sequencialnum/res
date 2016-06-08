@@ -1,0 +1,3 @@
+g++ -o 2154-sequencialnum 2154-sequencialnum.cpp -std=c++11
+chmod +x 2154-sequencialnum
+./2154-sequencialnum < 2154-sequencialnum.in
