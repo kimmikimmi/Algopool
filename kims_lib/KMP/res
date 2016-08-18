@@ -1,0 +1,3 @@
+g++ -o KMP KMP.cpp -std=c++11
+chmod +x KMP
+./KMP < KMP.in

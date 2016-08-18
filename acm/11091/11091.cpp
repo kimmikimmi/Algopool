@@ -14,39 +14,55 @@
 using namespace std;
 
 int N;
-
-vector<string> panagrams;
-map<char, int> fringe;
+vector<string> str_bag;
 
 void input(std::istream& pin) {
-	pin >> N;
+	//pin >> N;
+
 	string tmp_str;
-	for(int i=0; i<N; i++) {
-		pin >> tmp_str;
-		panagrams.push_back(tmp_str);
-	}
-}
 
-void init_fringe() {
+	getline(pin, tmp_str);
+	N = stoi(tmp_str);
 	for(int i=0; i<N; i++) {
-		fringe['a'+i] = 0;
+		getline(pin,tmp_str); 
+		str_bag.push_back(tmp_str);
 	}
-}
-
-int method(string str) {
-	string trans_str = "";
-	for(auto& it : str) {
-		trans_str += toupper(it);
-	}
-	cout << trans_str << endl;
-	return 0;
 }
 
 int main() {
 	input(cin);
-	init_fringe();
-	for(auto& it : panagrams) cout << it << endl;
-	method(panagrams[0]);
+	for(int i=0; i<str_bag.size(); i++) {
+		string dest_str ;
+		dest_str.resize(str_bag[i].size());
+		transform(str_bag[i].begin(), str_bag[i].end(), dest_str.begin(), ::tolower);
+		str_bag[i] = dest_str;
+//		cout << "str_bag[" << i << "] = "<< str_bag[i] << endl; 
+	
+	}
 
+	for(auto& word : str_bag) {
+		vector<bool> bit_map(26,false);
+//		cout << "word = " << word << endl;
+		for(int i=0; i<word.size(); i++) {
+			if(word[i] >= 'a' && word[i] <='z') 
+				bit_map[word[i]-'a'] = true;
+		}
+		
+		int pan_flag = true;
+		
+		for(auto it : bit_map) 
+			if(!it) pan_flag = false;
+		
+		if(pan_flag) {
+			cout << "pangram" << endl;
+
+		} else {
+			cout << "missing " ;
+			for(int i=0; i<bit_map.size(); i++) 
+				if(bit_map[i] == false) cout << (char)('a' + i);  
+			cout << endl;	
+		}
+	}
+		
 	return 0;
 }

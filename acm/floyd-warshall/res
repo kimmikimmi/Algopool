@@ -1,0 +1,3 @@
+g++ -o floyd-warshall floyd-warshall.cpp -std=c++11
+chmod +x floyd-warshall
+./floyd-warshall < floyd-warshall.in

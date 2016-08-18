@@ -1,0 +1,3 @@
+g++ -o 1922-kruskal 1922-kruskal.cpp -std=c++11
+chmod +x 1922-kruskal
+./1922-kruskal < 1922-kruskal.in

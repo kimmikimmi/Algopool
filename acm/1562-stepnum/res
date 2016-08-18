@@ -1,0 +1,3 @@
+g++ -o 1562-stepnum 1562-stepnum.cpp -std=c++11
+chmod +x 1562-stepnum
+./1562-stepnum < 1562-stepnum.in

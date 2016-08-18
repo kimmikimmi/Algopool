@@ -1,0 +1,3 @@
+g++ -o LCString_SA_LCP LCString_SA_LCP.cpp -std=c++11
+chmod +x LCString_SA_LCP
+./LCString_SA_LCP < LCString_SA_LCP.in
